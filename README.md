@@ -2,11 +2,11 @@
 
 A new Flutter project.
 
-
+<p align="center">
 | SCREENSHOT                                               
 |------------------------------------------------|
-| ![App Screenshot](images/details_screenshot.png ) | 
-
+| ![App Screenshot](images/details_screenshot.png ){:width="300px"} | 
+</p>
 
 
 
