@@ -1,6 +1,14 @@
-# my_details
+# my_details_app
 
 A new Flutter project.
+
+
+| SCREENSHOT                                               
+|------------------------------------------------|
+| ![App Screenshot](images/details_screenshot.png ) | 
+
+
+
 
 ## Getting Started
 
