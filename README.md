@@ -1,11 +1,9 @@
 # my_details_app
 
 A new Flutter project.
-
+<h2>SCREENSHOT</h2>
 <p align="center">
-| SCREENSHOT                                               
-|------------------------------------------------|
-| ![App Screenshot](images/details_screenshot.png ){:width="300px"} | 
+<img src="images/details_screenshot.png " alt="Image" width="300px" />
 </p>
 
 
