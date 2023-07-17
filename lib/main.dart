@@ -14,69 +14,70 @@ class Detail extends StatelessWidget {
       home: Scaffold(
           backgroundColor: Colors.teal,
           body: SafeArea(
-              child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: double.infinity,
-              ),
-              const CircleAvatar(
-                radius: 100,
-                backgroundImage: AssetImage('images/passport.jpg'),
-                backgroundColor: Colors.red,
-              ),
-              const Text(
-                'Henry Ikemefuna',
-                style: TextStyle(
-                    fontFamily: 'Pacifico',
+              child: Container(
+            margin: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                CircleAvatar(
+                  radius: 100,
+                  backgroundImage: AssetImage('images/passport.jpg'),
+                  backgroundColor: Colors.red,
+                ),
+                Text(
+                  'Henry Ikemefuna',
+                  style: TextStyle(
+                      fontFamily: 'Pacifico',
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 35,
+                      fontStyle: FontStyle.italic),
+                ),
+                Text(
+                  'Flutter Developer',
+                  style: TextStyle(
+                    fontFamily: 'SourceSans',
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    fontSize: 35,
-                    fontStyle: FontStyle.italic),
-              ),
-              Text(
-                'Flutter Developer',
-                style: TextStyle(
-                  fontFamily: 'SourceSans',
-                  fontWeight: FontWeight.bold,
-                  color: Colors.teal.shade200,
-                  fontSize: 25,
-                  fontStyle: FontStyle.italic,
+                    color: Colors.white60,
+                    fontSize: 25,
+                    fontStyle: FontStyle.italic,
+                  ),
                 ),
-              ),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(10),
-                margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Icon(
+                SizedBox(
+                  width: 150,
+                  child: Divider(
+                    color: Colors.white60,
+                    thickness: 1.5
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: Icon(
                       Icons.call,
-                      color: Colors.red,
-                      size: 30,
+                      color: Colors.teal,
+                      size: 35,
                     ),
-                    Text('+234 7069547545')
-                  ],
+                    title: Text(
+                      '+234 7069547545',
+                      style: TextStyle(fontSize: 22, color: Colors.teal),
+                    ),
+                  ),
                 ),
-              ),
-              Container(
-                color: Colors.white,
-                margin: const EdgeInsets.symmetric(horizontal: 10),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Icon(
+                Card(
+                  child: ListTile(
+                    leading: Icon(
                       Icons.mail,
                       color: Colors.teal,
+                      size: 35,
                     ),
-                    Text('henryikemefuna@gmail.com')
-                  ],
-                ),
-              )
-            ],
+                    title: Text(
+                      'henryikemefuna@gmail.com',
+                      style: TextStyle(fontSize: 20, color: Colors.teal),
+                    ),
+                  ),
+                )
+              ],
+            ),
           ))),
     );
   }
